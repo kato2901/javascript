@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>ウインドウを開く</title>
+<script>
+window.onload = function() {
+  document.getElementById("moji2").value = window.opener.document.getElementById("moji").value ;
+}
+function w_close() {
+  window.opener.document.getElementById("moji").value =
+  document.getElementById("moji2").value;
+  window.close();
+}
+</script>
+<h1>リンク先となるHTML</h1>
+<p>main.htmlから、開かれました。</p>
+<input type="text" id="moji2"><br>
+<input type="button" value="サブウインドウ1を閉じる" onclick="w_close()">
