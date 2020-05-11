@@ -5,6 +5,7 @@ function add_a () {
 
   var e_link = document.createElement ('a');
   e_link.setAttribute ("href", url_adr.value);
+  e_link.setAttribute ("target", "_blank");
   e_link.innerHTML = link_name.value + "<br>";
   link_d.appendChild (e_link);
 }
