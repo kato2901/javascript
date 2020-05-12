@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>その他イベント</title>
+<script src="js/main.js" charset="utf-8"></script>
+
+<!-- onfocsイベント -->
+<input type="text" id="text_box" onfocus="focus_text()">
+<div id="mess"></div>
+
+<!-- onblurイベント -->
+<table border="1">
+  <tr>
+    <th>商品名</th>
+    <th>単価</th>
+    <th>数量</th>
+    <th>合計</th>
+  </tr>
+  <tr>
+    <td>ABCカード</td>
+    <td>1000</td>
+    <td><input id="su" type="text" size="4" value="1" onblur="kingaku_keisan(this.value)"></td>
+    <td><div id="gokei">1000</div></td>
+  </tr>
+</table>
+
+<!-- onchangeイベント -->
+<select onchange="select_change(this.selectedIndex, this[this.selectedIndex].value)">
+  <option value="0">お支払い方法を選択してください。</option>
+  <option value="1">銀行振込</option>
+  <option value="2">コンビニ支払</option>
+  <option value="3">クレジットカード支払</option>
+  <option value="4">代引</option>
+  <option value="5">着払い</option>
+</select>
+<div id="no_index"></div>
+<div id="houhou"></div>
+<div id="message"></div>
+
+
+<!-- onsubmitイベント -->
+<form type="post" onsubmit="return form_check()">
+  <input type="text" id="text_box" value="">
+  <input type="submit" value="送信">
+</form>
