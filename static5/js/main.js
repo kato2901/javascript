@@ -36,3 +36,18 @@ function form_check() {
   }
   return err_flag;
 }
+
+// イベントリスナー
+function button_click() {
+  alert("ボタンが押されました。")
+}
+
+function second_click() {
+  alert("ボタンが押されました。2")
+}
+
+window.onload = function() {
+  var b_id = this.document.getElementById("button_id");
+  b_id.addEventListener("click", second_click);
+  b_id.addEventListener("click", button_click);
+}
