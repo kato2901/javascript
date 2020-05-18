@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>必須入力項目</title>
+<script src="js/main.js"></script>
+<p>必須入力項目</p>
+<form action="#" id="form" method="get">
+  <table>
+    <tr>
+      <td>会員番号※</td>
+      <td><input type="text" size="8" id="code" name="code"></td>
+    </tr>
+    <tr>
+      <td>パスワード※</td>
+      <!-- 本来パスワードはtype="password"で入力した文字が見えないようにするが練習の為"text"にしている -->
+      <td><input type="text" size="20" id="pword" name="pword"></td>
+    </tr>
+    <tr>
+      <td>ニックネーム</td>
+      <td><input type="text" size="20" id="nname" name="nname"></td>
+    </tr>
+    <tr>
+      <td colspan="2">※は、必須項目</td>
+    </tr>
+  </table>
+  <!-- エンターを押すと送信されないようにする為 type="button" -->
+  <p><input type="button" id="sousin" value="送信"></p>
+</form>
