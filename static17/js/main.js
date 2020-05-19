@@ -38,6 +38,7 @@ function sort_shimei() {
   // 基準点をループさせる
   for(var i = 0; i < seiseki.length - 1; i++) {
     // 比較対象をループさせる
+    // 「あいうえお」は昇順で表示
     for(var j = i + 1; j < seiseki.length; j++) {
       if(seiseki[i].shimei > seiseki[j].shimei) {
         work["shimei"] = seiseki[j].shimei;
@@ -59,6 +60,7 @@ function sort_tokuten() {
   // 基準点をループさせる
   for(var i = 0; i < seiseki.length - 1; i++) {
     // 比較対象をループさせる
+    // 数字の大きい順は降順
     for(var j = i + 1; j < seiseki.length; j++) {
       if(seiseki[i].tokuten < seiseki[j].tokuten) {
         work["shimei"] = seiseki[j].shimei;
