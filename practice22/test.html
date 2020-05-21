@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>音声データの再生</title>
+<script src="js/main.js" ></script>
+<!-- audioタグは、jsから操作するのなら本来はcontrols属性をつける必要はない -->
+<audio src="MusMus.mp3" id="audio" controls>
+  <a href="MusMus.mp3">BGM(右クリックして対象をファイルに保存を選んでください)</a>
+</audio>
+<p>
+  <button type="button" id="play">再生</button>
+  <button type="button" id="pause">停止</button>
+  <label><input type="checkbox" id="loop">ループ再生</label>
+</p>
+<p>
+  音量
+  <button type="button" id="mute">ミュート</button>
+  <button type="button" id="down">小さく</button>
+  <button type="button" id="up">大きく</button>
+</p>
