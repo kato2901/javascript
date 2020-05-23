@@ -37,12 +37,13 @@ function click_f_out() {
 
 function click_org() {
   clearInterval(timer_id);
+  timer_id = null;
   opacity = 1.0;
   document.getElementById("image").style.opacity = opacity;
 }
 
 window.onload = function() {
-  document.getElementById("f_in").addEventListener("click", click_f_in);
-  document.getElementById("f_out").addEventListener("click", click_f_out);
-  document.getElementById("org").addEventListener("click", click_org);
+  document.getElementById("f_in").addEventListener("click", click_f_in, false);
+  document.getElementById("f_out").addEventListener("click", click_f_out, false);
+  document.getElementById("org").addEventListener("click", click_org, false);
 }
